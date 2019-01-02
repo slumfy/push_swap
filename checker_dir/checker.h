@@ -6,7 +6,7 @@
 /*   By: rvalenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/31 11:48:24 by rvalenti          #+#    #+#             */
-/*   Updated: 2019/01/01 17:03:56 by rvalenti         ###   ########.fr       */
+/*   Updated: 2019/01/02 18:28:08 by rvalenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ typedef struct		s_data
 /*
 **	PARSER
 */
+int					ft_is_op(t_data *base, char *str);
 char				**ft_init_inst_db(void);
 int					ft_check_double(t_stack *a, int n);
 void				ft_read_stdin(t_data *data, char *filename);

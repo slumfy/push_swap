@@ -6,7 +6,7 @@
 #    By: rvalenti <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 19:05:19 by rvalenti          #+#    #+#              #
-#    Updated: 2018/12/30 16:23:59 by rvalenti         ###   ########.fr        #
+#    Updated: 2019/01/02 17:28:28 by rvalenti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,6 @@ all:	$(NAME)
 
 %.o :	%.c ./libft.h
 	@$(CC) -I ./libft.h -c -o $@ $<
-	@/bin/echo -n "#"
 
 $(NAME): $(OBJ)
 	@$(CC) -I ./libft.h -c $(SRCS)
