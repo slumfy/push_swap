@@ -6,7 +6,7 @@
 /*   By: rvalenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/31 16:32:10 by rvalenti          #+#    #+#             */
-/*   Updated: 2019/01/01 17:26:28 by rvalenti         ###   ########.fr       */
+/*   Updated: 2019/01/02 14:06:49 by rvalenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,8 @@ int		main(int ac, char **av)
 		ft_quick_sort(data, ac - 1);
 	else if (ac - 1 > 3)
 		ft_insert_sort(data, ac - 1);
-	else if (ac - 1 == 3)
+	else if (ac - 1 <= 3)
 		ft_spec_sort(data);
-	else if (ac - 1 == 2)
-		ft_spec_tsort(data);
 	ft_print_inst(data);
 	ft_free_struct(data);
 	return (0);

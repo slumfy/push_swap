@@ -6,7 +6,7 @@
 #    By: rvalenti <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 19:05:19 by rvalenti          #+#    #+#              #
-#    Updated: 2019/01/02 10:52:19 by rvalenti         ###   ########.fr        #
+#    Updated: 2019/01/02 16:50:04 by rvalenti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,8 +38,7 @@ all:	$(NAME)
 $(NAME): $(OBJ)
 	@$(CC) $(OBJ) -o $(NAME) -I $(LIBFT) -I includes/ -L $(LIBFT) -lft
 %.o: %.c
-	@$(CC) -I $(LIBFT) -I . -c $< -o $@
-	@/bin/echo -n "#"
+	$(CC) -I $(LIBFT) -I . -c $< -o $@
 clean:
 	@rm -rf $(OBJ)
 	@make clean -C $(LIBFT)
